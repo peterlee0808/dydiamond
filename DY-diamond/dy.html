@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DY diamond</title>
+    <link rel="stylesheet" href="dy.css" />
+    <script src="plugins/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <!-- logo section -->
+      <div class="logo-section">
+        <div class="hamburger"></div>
+        <a href="">
+          <img src="pic/logo.png" class="logo" alt="" />
+        </a>
+        <div><button class="preorder">預約鑑賞</button></div>
+      </div>
+      <!-- navigation -->
+      <div class="navigation">
+        <ul class="menu">
+          <li class="nav-item large">
+            <a href="">品牌</a>
+          </li>
+          <li class="nav-item large">
+            <a href="">GIA鑽石</a>
+          </li>
+          <li class="nav-item">
+            <a href="">訂婚鑽戒</a>
+          </li>
+          <li class="nav-item">
+            <a href="">結婚對戒</a>
+          </li>
+          <li class="nav-item large">
+            <a href="">高級珠寶</a>
+          </li>
+          <li class="nav-item large">
+            <a href="">專屬服務</a>
+          </li>
+          <li class="nav-item">
+            <a href="">服務據點</a>
+          </li>
+          <li class="nav-item large">
+            <a href="">預約鑑賞</a>
+          </li>
+          <li class="nav-item large">
+            <a href="">ONLINE SHOP</a>
+          </li>
+          <li class="nav-item large">
+            <div class="hamburger-large"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- breadcrumb -->
+    <div class="breadcrumb-container">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="">首頁</a>
+        </li>
+        <div class="slash">/</div>
+        <li class="breadcrumb-item">
+          <a href="">預約鑑賞</a>
+        </li>
+      </ul>
+    </div>
+    <!-- banner -->
+    <div class="img">
+      <img src="pic/table.jpg" class="banner" alt="" />
+    </div>
+    <h4>預約鑑賞</h4>
+    <div class="info-service">
+      請填寫您的資訊，我們將安排專人為您服務 &nbsp;<span>※ 為必填項目</span>
+    </div>
+    <!-- form -->
+    <form action="">
+      <div class="row">
+        <div class="large-6 columns">
+          <div class="item-row-wrap">
+            <div class="item-col_1">
+              <label for="middle">
+                預約門市<span class="require"> ※</span>
+              </label>
+            </div>
+            <select name="shop">
+              <option value="敦南旗艦店">敦南旗艦店</option>
+              <option value="台北古亭店">台北古亭店</option>
+              <option value="桃園中正店">桃園中正店</option>
+              <option value="台中精誠店">台中精誠店</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns">
+          <div class="item-row-wrap">
+            <div class="item-col_1">
+              <label for="middle">
+                來店人數<span class="require"> ※</span>
+              </label>
+            </div>
+            <input type="number" name="number" value="1" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns">
+          <div class="item-row-wrap">
+            <div class="item-col_1">
+              <label for="middle">
+                預約日期<span class="require"> ※</span>
+              </label>
+            </div>
+            <input
+              class="flatpickr-input flatpickr-mobile"
+              step="any"
+              tabindex="1"
+              type="date"
+              placeholder="請選擇日期"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns">
+          <div class="item-row-wrap">
+            <div class="item-col_1">
+              <label for="middle">
+                預約時段<span class="require"> ※</span>
+              </label>
+            </div>
+            <select name="rtime">
+              <option value="11:30">11:30</option>
+              <option value="12:00">12:00</option>
+              <option value="12:30">12:30</option>
+              <option value="13:00">13:00</option>
+              <option value="13:30">13:30</option>
+              <option value="14:00">14:00</option>
+              <option value="14:30">14:30</option>
+              <option value="15:00">15:00</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="item-row-wrap">
+            <div class="item-col_1">
+              <label for="middle"> 姓名<span class="require"> ※</span> </label>
+            </div>
+            <input type="text" name="username" id="username" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns">
+          <div class="item-row-wrap">
+            <div class="item-col_1">
+              <label for="middle">
+                連絡電話<span class="require"> ※</span>
+              </label>
+            </div>
+            <input type="text" name="mobile" id="mobile" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns">
+          <div class="item-row-wrap">
+            <div class="item-col_1">
+              <label for="middle">
+                詢問商品<span class="require"> ※</span>
+              </label>
+            </div>
+            <div class="row item-col_2">
+              <div class="large-3 columns">
+                <input type="radio" value="求婚鑽戒" id required />
+                <label for="middle">求婚鑽戒</label>
+              </div>
+              <div class="large-3 columns">
+                <input type="radio" value="結婚對戒" id required />
+                <label for="middle">結婚對戒</label>
+              </div>
+              <div class="large-3 columns">
+                <input type="radio" value="其他商品服務" id required />
+                <label for="middle">其他商品服務</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="item-row-wrap">
+            <div class="item-col_1">
+              <label for="middle"> 備註<span class="require"> ※</span> </label>
+            </div>
+            <textarea style="height: 80px" ; name="remark"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="item-row-wrap">
+            <div class="item-col_1">
+              <label for="middle">
+                驗證碼<span class="require"> ※</span>
+              </label>
+            </div>
+            <input type="code" type="text" name="code" />
+            <img src="https://dy-jewelry.com/LiteVerifyCode.class.php" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="row columns text-center">
+        <input
+          type="submit"
+          name
+          value="送出填寫資料"
+          class="button-secondary"
+        />
+      </div>
+    </form>
+    <!-- store info -->
+    <div class="store-info">
+      <div class="help-text">※ 欲當日預約，請直接來電</div>
+      <div class="store">
+        <div class="left-store">
+          <div class="store-container">
+            <div class="store-name">台北敦南</div>
+            <div class="store-locate">台北市大安區敦化南路二段113號</div>
+            <div class="store-tel">
+              <a href="" class="tel">TEL (02)2737-0965</a>
+            </div>
+          </div>
+          <div class="store-container">
+            <div class="store-name">台北古亭</div>
+            <div class="store-locate">台北市大安區羅斯福路二段75號</div>
+            <div class="store-tel">
+              <a href="" class="tel">TEL (02)2362-2051</a>
+            </div>
+          </div>
+        </div>
+        <div class="right-store">
+          <div class="store-container">
+            <div class="store-name">桃園中正</div>
+            <div class="store-locate">桃園市桃園區中正路1380號</div>
+            <div class="store-tel">
+              <a href="" class="tel">TEL (03)317-3331</a>
+            </div>
+          </div>
+          <div class="store-container">
+            <div class="store-name">台中精誠</div>
+            <div class="store-locate">台中市西區精誠路122號</div>
+            <div class="store-tel">
+              <a href="" class="tel">TEL (04)2327-5831</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="https://dy-jewelry.com/image/dia_01.jpg" class="diamond" alt="" />
+    <div class="menu-block">
+      <p>MENU</p>
+    </div>
+    <!-- details section -->
+    <div class="details-container">
+      <details>
+        <summary>品牌</summary>
+        <ul>
+          <li class="details-item">品牌精神</li>
+        </ul>
+        <ul>
+          <li class="details-item">極致璀燦</li>
+        </ul>
+        <ul>
+          <li class="details-item">精湛工藝</li>
+        </ul>
+      </details>
+      <details>
+        <summary>GIA鑽石報價</summary>
+        <ul>
+          <li class="details-item">GIA鑽石-圓形</li>
+        </ul>
+        <ul>
+          <li class="details-item">GIA鑽石-花式</li>
+        </ul>
+        <ul>
+          <li class="details-item">GIA鑽石-彩鑽</li>
+        </ul>
+      </details>
+      <details>
+        <summary>訂婚鑽戒</summary>
+      </details>
+      <details>
+        <summary>結婚對戒</summary>
+      </details>
+      <details>
+        <summary>高級珠寶</summary>
+        <ul>
+          <li class="details-item">鑽戒</li>
+        </ul>
+        <ul>
+          <li class="details-item">鑽石墜鍊</li>
+        </ul>
+        <ul>
+          <li class="details-item">鑽石耳環</li>
+        </ul>
+        <ul>
+          <li class="details-item">鑽石手鍊</li>
+        </ul>
+        <ul>
+          <li class="details-item">彩鑽珠寶</li>
+        </ul>
+        <ul>
+          <li class="details-item">花式鑽石</li>
+        </ul>
+      </details>
+      <details>
+        <summary>服務據點</summary>
+      </details>
+      <details>
+        <summary>預約鑑賞</summary>
+      </details>
+      <details>
+        <summary>ONLINE SHOP</summary>
+      </details>
+    </div>
+    <!-- icon section -->
+    <div class="icon-container">
+      <div class="icon">
+        <div class="line"></div>
+        <div class="fb"></div>
+        <div class="ig"></div>
+      </div>
+      <div class="search">
+        <div class="search-icon"></div>
+        <input type="text" class="search-text" placeholder="Search" />
+      </div>
+    </div>
+    <img
+      src="https://dy-jewelry.com/image/dia_01.jpg"
+      class="diamond-small"
+      alt=""
+    />
+    <!-- list block -->
+    <div class="list-block">
+      <div class="list-block-container">
+        <div class="list-title">回首頁</div>
+        <div class="list-items-container">
+          <div class="list-item-left">
+            <div class="list-item">品牌</div>
+            <div class="list-item">專屬服務</div>
+            <div class="list-item">服務據點</div>
+            <div class="list-item">預約鑑賞</div>
+          </div>
+          <div class="list-item-right">
+            <div class="list-item">教育中心</div>
+            <div class="list-item">最新活動</div>
+            <div class="list-item">常見問題</div>
+            <div class="list-item">嚴選婚禮夥伴</div>
+            <div class="list-item">ONLINE SHOP</div>
+          </div>
+        </div>
+      </div>
+      <div class="list-block-container">
+        <div class="list-title">鑽戒</div>
+        <div class="list-items-container">
+          <div class="list-item-left">
+            <div class="list-item">GIA鑽石</div>
+            <!-- <div class="list-item">專屬服務</div>
+          <div class="list-item">服務據點</div>
+          <div class="list-item">預約鑑賞</div> -->
+          </div>
+          <div class="list-item-right">
+            <div class="list-item">訂婚鑽戒</div>
+            <div class="list-item">結婚對戒</div>
+            <div class="list-item">高級珠寶</div>
+            <!-- <div class="list-item">嚴選婚禮夥伴</div>
+          <div class="list-item">ONLINE SHOP</div> -->
+          </div>
+        </div>
+      </div>
+      <div class="list-block-container">
+        <div class="list-title">服務據點</div>
+        <div class="list-items-container">
+          <div class="list-item-right-float">
+            <div class="list-item">敦南旗艦店</div>
+            <div class="list-item">台北古亭店</div>
+            <div class="list-item">桃園中正店</div>
+            <div class="list-item">台中精誠店</div>
+            <!-- <div class="list-item">ONLINE SHOP</div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section -->
+    <footer class="small-footer">
+      <div class="contact">
+        <ul>
+          <li><a href="">網站使用條款</a></li>
+          <li><a href="" class="border-line">網站地圖</a></li>
+          <li><a href="">聯絡我們</a></li>
+        </ul>
+      </div>
+      <div class="policy">
+        Copyright © 2019&nbsp;DY Diamond 大亞鑽石 保留所有權利
+      </div>
+    </footer>
+    <footer class="big-footer">
+      <div class="policy-big">
+        Copyright © 2019&nbsp;DY Diamond 大亞鑽石 保留所有權利
+      </div>
+      <div class="contact-big">
+        <ul class="big">
+          <li><a href="">網站使用條款</a></li>
+          <li><a href="" class="big-border-line">網站地圖</a></li>
+          <li><a href="">聯絡我們</a></li>
+        </ul>
+      </div>
+      <div class="icon-big">
+        <div class="line"></div>
+        <div class="fb"></div>
+        <div class="ig"></div>
+      </div>
+    </footer>
+    <div class="fixed-icon">
+      <div class="top">往上</div>
+      <div class="messenger"></div>
+    </div>
+  </body>
+</html>
